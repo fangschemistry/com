@@ -1,0 +1,173 @@
+body::after {
+    content: "";
+    background-image: url('./img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.13;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+div.title {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+div.timer {
+    display: none;
+    position: absolute;
+    top: 0px;
+    width: 580px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+p.lefttime {
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+.second {
+    color: red;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+div.insidecolor {
+    background-color: rgb(162, 253, 25);
+    margin-left: 0px;
+    width: 496px;
+    height: 33px;
+    /* border-radius: 33px; */
+}
+
+.leftproblem {
+    font-size: 36px;
+    /* display: block; */
+    width: 272px;
+    color: red;
+    font-weight: bold;
+}
+
+div.strip {
+    width: 500px;
+    height: 37px;
+    position: absolute;
+    border: 2px black solid;
+    /* border-radius: 37px; */
+}
+
+.yesno {
+    /* position: absolute;
+    top: 0px;
+    margin-left: 925px; */
+    display: none;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 530px;
+}
+
+.problem {
+    margin-left: 20px;
+    margin-top: 5px;
+    display: none;
+}
+
+#problemimg {
+    /* max-height: 448px; */
+    /* max-width: 1070px; */
+    max-height: 425px;
+    max-width: 700px;
+    opacity: 0.95;
+}
+
+.options {
+    /* float: right; */
+    width: 98px;
+    font-size: 24px;
+    opacity: 0.75;
+}
+
+.abcd {
+    display: inline-block;
+    border-collapse: collapse;
+    margin-left: 30px;
+    position: relative;
+    top: 0;
+}
+
+.abcd>th {
+    width: 100px;
+    padding: 10px;
+}
+
+td {
+    width: 100px;
+    padding-top: 10px;
+    /* margin-top: 10px; */
+}
+
+.content {
+    margin-left: 30px;
+    display: none;
+}
+
+.explain {
+    display: inline-block;
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: orange
+}
+
+.header {
+    width: 380px;
+    height: 200px;
+    background-color: rgba(245, 245, 245, 0.99);
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center
+}
+
+.result {
+    display: none;
+    margin-left: 20px;
+}
+
+.resulttable {
+    border-collapse: collapse;
+    border: black solid 2px;
+    text-align: center;
+}
+
+.resulttable>th,
+.resulttable>td {
+    width: 50%
+}
+
+.score {
+    font-size: 28px;
+    font-family: mycustomfont;
+}
+
+@font-face {
+    font-family: myCustomFont;
+    src: local(Heiti TC), local("標楷體");
+    /* no unicode-range; default to all characters */
+}
+
+@font-face {
+    font-family: myCustomFont;
+    /* 同樣的 font-family */
+    unicode-range: U+00-024F;
+    /* Latin, Latin1 Sup., Ext-A, Ext-B */
+    src: local(Serif), /* OS X preferred */
+}

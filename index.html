@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>有機Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="position:fixed;width:150px;height:60px;top:0px;right:0px">
+        <a href="https://www.facebook.com/fangschemistry" target="_blank" style="position:fixed;"><img src="./img/logo.bmp" style="position:fixed;width:150px;height:45px;top:0px;right:0px"></a>
+        <p style="position:relative;top:46px;left:2px;font-family: 標楷體;font-weight: 600;">© 2020.01 方氏化學<br>創辦人：方東華<br>醫學二 b07401155</p>
+
+    </div>
+    <div style="display: inline-block;">
+        <div class="title header">
+            <h1 class="display-3 ex">
+                有機Online
+            </h1>
+            <p class="lead">透過小遊戲讓你無痛學化學(((o(ﾟ▽ﾟ)o)))</p>
+
+            <button type="button" class="btn btn-primary btn-lg" id="start">開始遊戲</button>
+        </div>
+
+        <div class="timer">
+            <p class="lefttime lead">剩餘時間：<span class="second"></span>秒</p>
+            <div class="strip">
+                <div class="insidecolor"></div>
+            </div>
+            <br><br><br><br><br>
+            <!-- <p class="leftproblem">你還剩下<span class="problemnum">10</span>題！</p> -->
+        </div>
+        <div class="yesno">
+            <img id="yesno" src="./img/yes.jpg" style="width:200px;height:175px">
+        </div>
+    </div>
+    <div class="content">
+        <p class="lead" style="margin-bottom: 3px;">那麼，選擇你想學的範圍或科目吧！</p>
+        <button type="button" class="btn btn-success btn-lg" id="elementary" style="opacity: 0.6;">基礎化學</button>
+        <button type="button" class="btn btn-warning btn-lg" id="optional" style="opacity: 0.6;">選修化學</button>
+        <button type="button" class="btn btn-danger btn-lg" id="organic">有機化學</button>
+        <span class="explain"></span>
+    </div>
+    <div class="problem">
+        <img src="" style="float:left" id="problemimg">
+        <table class="abcd">
+            <tr>
+                <th><button class="options btn btn-primary" id="A">A</button></th>
+            </tr>
+            <tr>
+                <td><button class="options btn btn-primary" id="B">B</button></td>
+            </tr>
+            <tr>
+                <td><button class="options btn btn-primary" id="C">C</button></td>
+            </tr>
+            <tr>
+                <td><button class="options btn btn-primary" id="D">D</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="result">
+        <p style="font-family: 標楷體;font-size: 35px;">你的成績出來囉：</p>
+        <table class="resulttable">
+            <tr style="background-color: black;color:white">
+                <th>題號</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;">正確答案</td>
+                <td id="c1"></td>
+                <td id="c2"></td>
+                <td id="c3"></td>
+                <td id="c4"></td>
+                <td id="c5"></td>
+                <td id="c6"></td>
+                <td id="c7"></td>
+                <td id="c8"></td>
+                <td id="c9"></td>
+                <td id="c10"></td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;">你的答案</td>
+                <td id="i1"></td>
+                <td id="i2"></td>
+                <td id="i3"></td>
+                <td id="i4"></td>
+                <td id="i5"></td>
+                <td id="i6"></td>
+                <td id="i7"></td>
+                <td id="i8"></td>
+                <td id="i9"></td>
+                <td id="i10"></td>
+            </tr>
+        </table>
+        <p class="score"></p>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="./index3.js"></script>
+
+</html>
