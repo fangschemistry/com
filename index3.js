@@ -128,6 +128,8 @@ var displayproblem = (th, src, ans, time) => {
             if (click[index] == false) {
                 inputans[index] = "未作答"
                 $('.options').off('click');
+                $('.yesno').css("display", "inline-block");
+                $('#yesno').attr("src", "./img/no.jpg");
                 //console.log("click[" + index + "] == false")
                 click[index] = true;
                 index++;
